@@ -4,7 +4,6 @@ import Models._
 
 object Main {
 
-  println("Hello World")
   def applyDiscount(cartId: CartId, storage: Storage[Cart]): Unit = {
     val cart = loadCart(cartId)
     if (cart != Cart.missingCart) {
